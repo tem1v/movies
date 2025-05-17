@@ -10,7 +10,7 @@ export default class MoviesModel {
         return this.#currentFilter === "all"
             ? this.#boardmovies
             : this.#boardmovies.filter(
-                  (m) => m.isWatched === (this.#currentFilter === "watched")
+                  (m) => m.isWatched === this.#currentFilter
               );
     }
 
